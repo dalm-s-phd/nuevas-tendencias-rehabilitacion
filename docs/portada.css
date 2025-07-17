@@ -1,0 +1,20 @@
+.cover-main img {
+  max-width: 60%;
+  margin: 2em auto;
+  display: block;
+}
+.cover-main h1, .cover-main h2 {
+  text-align: center;
+  font-weight: 700;
+}
+.lead {
+  font-size: 1.3em;
+  font-style: italic;
+  color: #1857b6;
+  margin-bottom: 1.5em;
+}
+.book-logo {
+  max-height: 80px;   /* Ajusta según gusto */
+  margin: 1em auto 1em 0;
+  display: block;
+}
