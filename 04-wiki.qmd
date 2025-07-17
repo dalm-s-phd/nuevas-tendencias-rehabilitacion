@@ -1,0 +1,124 @@
+# Wiki del proceso colaborativo y legado estudiantil
+
+El wiki es una herramienta central en este taller. No es solo un espacio para “dudas y preguntas frecuentes”, sino un **manual vivo** donde cada cohorte de estudiantes deja registro de su experiencia, errores, soluciones y recomendaciones para quienes vengan después. Construir el wiki es, al mismo tiempo, aprender haciendo y dejar una huella para la comunidad.
+
+---
+
+## ¿Para qué sirve el wiki?
+
+- **Compartir dudas y problemas:** Anotar cualquier obstáculo, confusión o dificultad encontrada durante el proceso.
+- **Registrar soluciones y acuerdos:** Escribir cómo resolvieron esas dificultades, qué consensos alcanzó el grupo o qué estrategias funcionaron.
+- **Recomendar buenas prácticas:** Dejar consejos y atajos útiles para buscar, seleccionar, leer o registrar artículos.
+- **Crear un legado:** Cada entrada suma a una base de conocimiento que será útil a los próximos equipos y a los propios docentes.
+
+---
+
+## ¿Qué tipo de entradas puedo (y debo) sumar?
+
+Algunas ideas para el tipo de información a dejar en el wiki:
+
+- Errores frecuentes y cómo los resolvieron (por ejemplo: “Nos confundimos al identificar la población y esto hicimos para solucionarlo…”)
+- Dudas metodológicas y las respuestas encontradas (consultando docentes, leyendo o debatiendo)
+- Consejos para buscar artículos o elegir palabras clave
+- Recomendaciones sobre organización grupal
+- Sugerencias para el uso de la planilla de extracción o el manejo de referencias
+- Frases o reflexiones breves para futuras cohortes (“No subestimen la importancia de definir bien los criterios de inclusión…”)
+
+---
+
+## ¿Cómo se usa el wiki en Moodle? (Guía paso a paso)
+
+1. **Accede al aula virtual del taller y busca la sección Wiki** (puede llamarse “Wiki colaborativa”, “Registro de proceso”, etc.).
+2. **Haz clic en “Añadir entrada” o “Editar”** (según esté configurado).
+3. **Escribe un título claro y breve** (por ejemplo: “Cómo elegimos palabras clave”, “Error frecuente: exclusión de artículos”).
+4. **Redacta tu entrada de forma concisa y concreta**. Si es una duda, sé específico. Si es una recomendación, usa ejemplos o justifica el consejo.
+5. **(Opcional) Adjunta una imagen o captura de pantalla** si es útil para ilustrar el problema o la solución.
+6. **Guarda la entrada** y verifica que quede visible para el resto del grupo.
+7. **Lee y comenta las entradas de otros** si tienes algo que sumar, aclarar o mejorar.
+8. **No borres aportes de otros**: si una entrada ya fue respondida o actualizada, agrega un comentario debajo o crea una nueva versión.
+
+---
+
+### 4.3.1. ¿Cómo crear nuevas páginas, secciones y un índice en el wiki de Moodle?
+
+- Para mantener la información organizada y accesible, puedes crear nuevas páginas dentro del wiki para cada tema, duda frecuente, error o recomendación.
+- **¿Cómo hacerlo?**  
+  1. Cuando estés editando o creando una entrada, escribe el título de la página que quieras crear entre dobles corchetes, por ejemplo: `[[Errores frecuentes]]` o `[[Palabras clave útiles]]`.  
+  2. Al guardar tu entrada, Moodle convertirá ese texto en un enlace a una nueva página, que podrás completar después.
+  3. Haz clic en el enlace recién creado para editar esa nueva página y sumar contenido relacionado.
+  4. Puedes anidar páginas, por ejemplo: `[[Errores frecuentes/Extracción de datos]]` para crear una subpágina.
+- **Sugerencia:**  
+  Crea una página principal (por ejemplo: “Inicio del Wiki” o “Manual del taller”) con un índice de secciones y enlaces a cada página creada por el grupo. Así, el wiki será más fácil de navegar para todos.
+
+#### Ejemplo de índice wiki (Manual del taller):
+
+Puedes copiar y pegar esto en la **página principal** del wiki, y los títulos entre corchetes crearán automáticamente los enlaces:
+
+= Manual del taller: índice =
+  [[Dudas metodológicas]]
+  [[Recomendaciones para buscar artículos]]
+  [[Buenas prácticas para el registro de datos]]
+  [[Errores frecuentes]]
+  [[FAQ del taller]]
+
+
+  
+> **Tip:** Si tienes dudas sobre cómo usar las funciones del wiki en Moodle, pide una demostración al docente o revisa los [tutoriales cortos](https://docs.moodle.org/all/es/Uso_de_Wiki) de la plataforma.
+
+---
+
+### ¿Cómo se ve una entrada de wiki?
+
+**Esqueleto recomendado:**
+
+- **Título:** Describe el tema en pocas palabras.
+- **Problema o duda:**  
+  Explica brevemente el problema encontrado, la situación concreta o la pregunta que surgió.
+- **Solución, respuesta o recomendación:**  
+  Describe cómo lo resolviste (o cómo te lo explicaron). Si es una recomendación, justifica brevemente por qué puede ayudar a otros.
+- **(Opcional) Ejemplo real o breve captura:**  
+  Si corresponde, agrega una imagen o una cita breve.
+- **Reflexión final (opcional):**  
+  ¿Qué aprendiste de la experiencia? ¿Qué sugerirías a los futuros equipos sobre este tema?
+
+**Ejemplo completo de entrada útil:**
+
+- **Título:** Dificultad para encontrar palabras clave en LILACS
+- **Problema:**  
+  No encontrábamos artículos relevantes usando solo “fisioterapia” y “rehabilitación”. Los resultados eran muy generales.
+- **Solución:**  
+  Exploramos los artículos que sí eran relevantes y encontramos que muchos usaban el término “movimiento funcional” y “rehabilitación motora”. Agregamos estos términos y filtramos por país.
+- **Reflexión:**  
+  Sugerimos siempre hacer una búsqueda de aproximación antes de definir la estrategia final y anotar los términos más productivos en el wiki.
+
+---
+
+## Dudas más frecuentes (FAQ)
+
+- **¿Qué hago si dos artículos parecen casi iguales?**  
+  Verifica si son el mismo estudio publicado en dos revistas o si hay diferencias reales (diseño, población, etc.). Consulta al docente ante la duda y registra el caso en el wiki.
+
+- **¿Cómo decidir si un artículo cumple los criterios de inclusión si no hay suficiente información en el resumen?**  
+  Intenta acceder al texto completo. Si sigue sin quedar claro, discútelo en grupo y consúltalo con el docente.
+
+- **¿Es obligatorio que todos los miembros del grupo participen en el wiki?**  
+  Sí, la participación es colectiva y todos los aportes son valiosos.
+
+- **¿Qué pasa si me equivoco al registrar algo en el wiki?**  
+  Puedes corregirlo en una nueva entrada o comentario, pero nunca borres lo que ya está (así queda registro de todo el proceso).
+
+- **¿Qué tipo de recomendaciones son útiles para futuras cohortes?**  
+  Todo lo que te hubiera gustado saber al empezar: atajos, errores evitables, dudas resueltas, estrategias de organización.
+
+---
+
+## Por qué dejar un legado:
+
+- Tu experiencia puede ayudar a futuros estudiantes a evitar los mismos errores o resolver dudas más rápido.
+- El wiki también es útil para docentes: les muestra las verdaderas dificultades, aciertos y necesidades de cada grupo.
+- Un taller con un wiki robusto es más ágil y enriquecedor para todos.
+
+**Recuerda:**  
+Cada entrada, por mínima que sea, puede hacer la diferencia para otros. Lo que hoy es tu duda, mañana puede ser la respuesta clave de un equipo nuevo.
+
+---

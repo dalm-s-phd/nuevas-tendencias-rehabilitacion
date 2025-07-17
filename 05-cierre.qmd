@@ -1,0 +1,17 @@
+# Cierre: hacia una comunidad de aprendizaje e investigación
+
+Este documento es solo un punto de partida. Tanto el taller como los materiales aquí presentados fueron pensados para evolucionar junto con las necesidades, intereses y desafíos de quienes lo utilicen. Su valor radica en la apropiación colectiva, la actualización constante y la disposición a repensar los métodos, las preguntas y los enfoques.
+
+La construcción del conocimiento en salud exige apertura, rigor y colaboración. Esperamos que la experiencia de revisar, analizar y producir colectivamente marque una diferencia real en la formación, y también inspire a quienes sigan este camino a buscar nuevas preguntas y soluciones.
+
+## Posibles líneas futuras
+
+- Ampliar a áreas temáticas emergentes.
+- Sumar herramientas de análisis cualitativo y visualización avanzada de datos.
+- Integrar este modelo de taller con actividades de extensión o proyectos interdisciplinarios.
+- Desarrollar espacios de discusión sobre ética y calidad en la investigación.
+- Publicar resultados en repositorios abiertos o como preprints.
+
+El aprendizaje nunca termina: cada cohorte puede dejar nuevas preguntas, herramientas y recomendaciones, mejorando la experiencia para quienes vengan después. El documento y el wiki son herramientas vivas: dependen del compromiso y la creatividad de cada estudiante y docente.
+
+---

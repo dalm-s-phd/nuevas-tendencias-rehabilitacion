@@ -1,0 +1,131 @@
+# Guía práctica para estudiantes
+
+Esta guía acompaña a cada equipo de estudiantes y al docente en todas las etapas del taller. El trabajo se realizará de manera conjunta y colaborativa: los docentes y los estudiantes participan a la par en la toma de decisiones, la búsqueda, el análisis y la reflexión. Además, el uso del **wiki** es clave desde el inicio: servirá para registrar dudas, acuerdos, recomendaciones y aprendizajes, ayudando a construir un legado útil para las futuras cohortes.
+
+---
+
+## ¿Qué vamos a hacer?
+
+El objetivo es conocer qué se ha investigado en fisioterapia y kinesiología en América Latina y Brasil en los últimos años. Para lograrlo, trabajaremos en equipos, acompañados por el docente, y recorreremos juntos las etapas principales de una revisión sistemática de alcance:
+
+1. Realizar una búsqueda de aproximación para encontrar palabras clave y términos relevantes.
+2. Buscar artículos científicos relevantes en bases de datos confiables usando la estrategia final.
+3. Seleccionar (filtrar) los estudios que cumplen los criterios definidos.
+4. Leer críticamente los artículos seleccionados.
+5. Extraer y registrar los datos más importantes de cada trabajo.
+6. Analizar en conjunto los resultados y presentar los hallazgos.
+7. Compartir dudas, soluciones y recomendaciones en el wiki colaborativo.
+
+---
+
+## Pasos del proceso
+
+### Paso 1: Búsqueda de aproximación y exploración de palabras clave
+
+- Antes de realizar la búsqueda principal, realicen una **búsqueda de aproximación** en las bases de datos recomendadas (PubMed, SciELO, LILACS, etc.).
+- El objetivo es explorar qué términos aparecen en los títulos, resúmenes y palabras clave de los artículos recientes sobre el tema.
+- Tomen nota de los términos más frecuentes, sinónimos y palabras clave (en español, inglés y portugués si es posible).
+- Discutan en grupo cuáles parecen más útiles o relevantes para el objetivo del taller.
+- Registren en el wiki los términos elegidos y la lógica de la búsqueda. Así, otros equipos (y futuras cohortes) podrán mejorar sus búsquedas con la experiencia acumulada.
+- Una vez identificadas las mejores palabras clave, armen la estrategia de búsqueda final, combinando términos y usando los filtros adecuados (año, país, idioma).
+
+**Ejemplo:**  
+Si buscan sobre “rehabilitación en adultos mayores”, primero prueben con términos como “rehabilitación geriátrica”, “elderly rehabilitation”, “adultos mayores”, “aged”, y revisen qué términos usan los artículos más relevantes en su resumen y sus palabras clave.
+
+**Diferencia clave:**  
+La **búsqueda de aproximación** es flexible y exploratoria, ayuda a definir cómo buscar mejor.  
+La **búsqueda sistemática** es la estrategia final, estructurada y replicable, que aplican luego para encontrar todos los artículos relevantes siguiendo los criterios acordados.
+
+### Paso 2: Búsqueda sistemática y registro
+
+- Utilicen las palabras clave y la estrategia final definida en la búsqueda de aproximación.
+- Busquen artículos en las bases recomendadas.
+- Realicen búsquedas en equipos y comparen los resultados.
+- Registren cualquier dificultad o hallazgo interesante en el wiki.
+
+### Paso 3: Selección y filtrado
+
+- Lean títulos y resúmenes para decidir si el artículo cumple con los criterios de inclusión/exclusión.
+- Si hay dudas, discútanlas en grupo antes de decidir.
+- Registren los motivos de exclusión (si es posible) y cualquier dificultad en el wiki.
+
+### Paso 4: Lectura crítica
+
+- Lean el artículo completo, prestando atención a la metodología y al objetivo principal.
+- Identifiquen la población estudiada, el área temática y el tipo de estudio.
+- Anoten dudas o ambigüedades para discutirlas en equipo y documentarlas en el wiki.
+
+### Paso 5: Extracción y registro de datos
+
+- Utilicen la tabla de extracción consensuada (ver Capítulo 2).
+- Completen cada campo con la información más precisa posible.
+- Si falta información, anótenlo como “no reportado”.
+- Registren dificultades o acuerdos metodológicos en el wiki.
+
+### Paso 6: Análisis y presentación
+
+- En grupo, revisen los datos extraídos y busquen patrones, tendencias y vacíos.
+- Elaboren gráficos o tablas simples para visualizar los resultados.
+- Preparen una síntesis para compartir en la clase final y en el wiki.
+
+---
+
+## Consejos prácticos y errores frecuentes
+
+- **No copies y pegues sin entender.** Resume con tus propias palabras siempre que puedas.
+- **No dejes para último momento la lectura de los artículos.** Distribuye el trabajo en tu equipo.
+- **Revisa que todos los campos de la tabla estén completos.** Las omisiones dificultan el análisis grupal.
+- **Consulta ante cualquier duda.** Es preferible preguntar a avanzar con errores.
+- **Registra desacuerdos o dificultades en el wiki.** Esto ayuda a las próximas cohortes y al equipo docente.
+
+---
+
+## Trabajo en equipo, comunicación y uso del wiki
+
+- Define objetivos claros dentro del grupo (buscar, leer, completar la tabla, realizar registros en el wiki, etc.).
+- Coordinen encuentros regulares (presenciales o virtuales) para revisar el avance y compartir hallazgos.
+- Resuelvan los desacuerdos dialogando y, si es necesario, con apoyo docente.
+- Utilicen el wiki como espacio de registro vivo: escriban dudas, acuerdos, consejos y aprendizajes para dejar un legado a los futuros estudiantes.
+
+---
+
+## ¿Qué hacer si surgen problemas?
+
+- Si no encuentran suficientes artículos, revisen los términos de búsqueda o consulten otras bases.
+- Si hay dificultades para decidir la inclusión o exclusión de un artículo, busquen el consenso grupal y, si persiste la duda, consulten al docente.
+- Si un miembro del grupo no participa, comuníquenlo a tiempo para evitar sobrecargas.
+- Cualquier situación particular puede y debe quedar registrada en el wiki.
+
+---
+
+## Glosario mínimo
+
+- **Búsqueda de aproximación (exploratoria):**  
+  Primer rastreo flexible de artículos para identificar palabras clave, términos y estrategias de búsqueda. Sirve para diseñar la búsqueda sistemática.
+- **Búsqueda sistemática:**  
+  Estrategia final, precisa y replicable, con criterios claros y filtros definidos, para encontrar todos los artículos relevantes sobre el tema.
+- **Revisión sistemática de alcance:**  
+  Mapea qué y cómo se ha investigado en un campo temático, sin evaluar necesariamente la calidad de cada estudio.
+- **Criterios de inclusión/exclusión:**  
+  Condiciones para decidir qué artículos analizar y cuáles descartar.
+- **Extracción de datos:**  
+  Proceso de registrar información clave de cada estudio en una planilla común.
+- **Wiki:**  
+  Espacio colaborativo para compartir dudas, aprendizajes, acuerdos y recomendaciones.
+
+---
+
+## ¿Cómo se evaluará tu participación?
+
+La evaluación será integral y tendrá en cuenta tanto tu participación durante el proceso como la calidad de los productos colaborativos. Estos son los principales criterios:
+
+- **Participación activa y sostenida:** Se espera que participes en las discusiones, en la toma de decisiones y en las tareas del grupo, tanto en clases como fuera de ellas.
+- **Aportes al trabajo de revisión:** Se valorarán tanto la cantidad como la calidad de tus contribuciones a la búsqueda, selección, análisis y registro de datos.
+- **Aportes al wiki colaborativo:** El registro de dudas, soluciones, recomendaciones y reflexiones en el wiki es fundamental. Tu experiencia puede ayudar a futuras cohortes.
+- **Presentismo:** La asistencia a las clases y actividades es importante para el funcionamiento del equipo.
+- **Informe final:** La calidad del informe de avance y la presentación de los resultados serán evaluadas por su claridad, orden y profundidad.
+
+**Recuerda:**  
+El proceso es tan importante como el resultado final. El aprendizaje colectivo, la colaboración y la honestidad intelectual se valoran tanto como el producto escrito. No dudes en consultar, proponer mejoras o registrar tus experiencias en el wiki.
+
+---

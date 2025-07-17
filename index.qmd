@@ -1,0 +1,43 @@
+# {.unnumbered}
+
+**Propuesta pedagógica y manual práctico para la formación investigativa en Kinesiología y Fisiatría**
+
+<div style="margin-top:2em;font-size:1.2em;">
+Este eBook está dirigido a docentes universitarios y estudiantes de cuarto año de la Licenciatura en Kinesiología y Fisiatría, como recurso central del taller optativo <b>"Nuevas Tendencias en la Rehabilitación"</b>.
+</div>
+
+---
+
+# Introducción
+
+La formación en investigación es un desafío recurrente en las carreras de salud. Los futuros profesionales necesitan conectar los saberes metodológicos aprendidos con la realidad de la producción científica. Sin embargo, esa conexión suele quedar relegada a lo teórico, sin espacios prácticos donde puedan experimentar cómo se investiga, se analiza y se produce conocimiento relevante.
+
+Este documento surge como una respuesta concreta a esa necesidad. Es a la vez una **propuesta pedagógica para docentes** y un **manual práctico para estudiantes**. Su objetivo es guiar el desarrollo del taller optativo *Nuevas Tendencias en la Rehabilitación*, brindando una experiencia auténtica de revisión sistemática de alcance sobre la producción científica reciente en fisioterapia y kinesiología en América Latina y Brasil.
+
+La obra está estructurada en capítulos pensados para acompañar a ambos públicos, articulando fundamentos, herramientas y ejemplos claros. Se promueve el trabajo colaborativo, la autonomía crítica y la participación activa, con el propósito de fortalecer la alfabetización científica y la producción académica significativa.
+
+---
+
+## ¿A quiénes está dirigido este eBook?
+
+- **Docentes:** encontrarán fundamentos, objetivos y una organización didáctica argumentada, junto a criterios de evaluación y sugerencias metodológicas.
+- **Estudiantes:** dispondrán de una guía para participar en una revisión sistemática, con ejemplos, consejos prácticos y un espacio colaborativo de intercambio y aprendizaje.
+
+---
+
+## Estructura del eBook
+
+1. **Fundamento y propósito del taller**  
+   Justificación, objetivos y organización didáctica.
+2. **El proyecto de investigación y modelo de extracción de datos**  
+   Herramientas y variables clave para el análisis de la literatura científica.
+3. **Guía práctica para estudiantes**  
+   Orientación paso a paso, ejemplos y recomendaciones.
+4. **El proceso colaborativo - Wiki como herramienta**  
+   Registro de dudas, errores, aprendizajes y recomendaciones para futuras cohortes.
+
+---
+
+## Nota sobre alcances y limitaciones
+
+Reconocemos que la centralidad de la investigación y la distancia entre teoría y práctica no se presentan del mismo modo en todas las carreras ni instituciones. La elección de la revisión sistemática de alcance como eje del taller responde, ante todo, a la práctica habitual de la mayoría de los estudiantes —quienes suelen optar por revisiones bibliográficas— y a criterios de viabilidad dentro del marco institucional actual. Asumimos que este material es perfectible y que el intento de dialogar a la vez con docentes y estudiantes presenta desafíos que solo podrán resolverse con la experiencia y el aporte de cada cohorte. Invitamos a quienes utilicen este eBook a considerarlo como un punto de partida.

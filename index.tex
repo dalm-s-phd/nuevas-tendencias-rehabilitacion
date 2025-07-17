@@ -1,0 +1,1307 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  letterpaper,
+]{book}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}  % Borra todos los headers
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Tabla de contenidos}
+\else
+  \newcommand\contentsname{Tabla de contenidos}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{Listado de Figuras}
+\else
+  \newcommand\listfigurename{Listado de Figuras}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{Listado de Tablas}
+\else
+  \newcommand\listtablename{Listado de Tablas}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figura}
+\else
+  \newcommand\figurename{Figura}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Tabla}
+\else
+  \newcommand\tablename{Tabla}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listado}
+\newcommand*\listoflistings{\listof{codelisting}{Listado de Listados}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{spanish}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Nuevas Tendencias en la Rehabilitación},
+  pdfauthor={Equipo de Cátedra --- Licenciatura en Kinesiología y Fisiatría},
+  pdflang={es},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Nuevas Tendencias en la Rehabilitación}
+\author{Equipo de Cátedra --- Licenciatura en Kinesiología y Fisiatría}
+\date{2024-12-31}
+
+\begin{document}
+\frontmatter
+\maketitle
+
+\renewcommand*\contentsname{Tabla de contenidos}
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+\mainmatter
+\bookmarksetup{startatroot}
+
+\chapter{Introducción}\label{introducciuxf3n}
+
+\textbf{Propuesta pedagógica y manual práctico para la formación
+investigativa en Kinesiología y Fisiatría}
+
+Este eBook está dirigido a docentes universitarios y estudiantes de
+cuarto año de la Licenciatura en Kinesiología y Fisiatría, como recurso
+central del taller optativo ``Nuevas Tendencias en la Rehabilitación''.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+La formación en investigación es un desafío recurrente en las carreras
+de salud. Los futuros profesionales necesitan conectar los saberes
+metodológicos aprendidos con la realidad de la producción científica.
+Sin embargo, esa conexión suele quedar relegada a lo teórico, sin
+espacios prácticos donde puedan experimentar cómo se investiga, se
+analiza y se produce conocimiento relevante.
+
+Este documento surge como una respuesta concreta a esa necesidad. Es a
+la vez una \textbf{propuesta pedagógica para docentes} y un
+\textbf{manual práctico para estudiantes}. Su objetivo es guiar el
+desarrollo del taller optativo \emph{Nuevas Tendencias en la
+Rehabilitación}, brindando una experiencia auténtica de revisión
+sistemática de alcance sobre la producción científica reciente en
+fisioterapia y kinesiología en América Latina y Brasil.
+
+La obra está estructurada en capítulos pensados para acompañar a ambos
+públicos, articulando fundamentos, herramientas y ejemplos claros. Se
+promueve el trabajo colaborativo, la autonomía crítica y la
+participación activa, con el propósito de fortalecer la alfabetización
+científica y la producción académica significativa.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{¿A quiénes está dirigido este
+eBook?}\label{a-quiuxe9nes-estuxe1-dirigido-este-ebook}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Docentes:} encontrarán fundamentos, objetivos y una
+  organización didáctica argumentada, junto a criterios de evaluación y
+  sugerencias metodológicas.
+\item
+  \textbf{Estudiantes:} dispondrán de una guía para participar en una
+  revisión sistemática, con ejemplos, consejos prácticos y un espacio
+  colaborativo de intercambio y aprendizaje.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Estructura del eBook}\label{estructura-del-ebook}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Fundamento y propósito del taller}\\
+  Justificación, objetivos y organización didáctica.
+\item
+  \textbf{El proyecto de investigación y modelo de extracción de
+  datos}\\
+  Herramientas y variables clave para el análisis de la literatura
+  científica.
+\item
+  \textbf{Guía práctica para estudiantes}\\
+  Orientación paso a paso, ejemplos y recomendaciones.
+\item
+  \textbf{El proceso colaborativo - Wiki como herramienta}\\
+  Registro de dudas, errores, aprendizajes y recomendaciones para
+  futuras cohortes.
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Nota sobre alcances y
+limitaciones}\label{nota-sobre-alcances-y-limitaciones}
+
+Reconocemos que la centralidad de la investigación y la distancia entre
+teoría y práctica no se presentan del mismo modo en todas las carreras
+ni instituciones. La elección de la revisión sistemática de alcance como
+eje del taller responde, ante todo, a la práctica habitual de la mayoría
+de los estudiantes ---quienes suelen optar por revisiones
+bibliográficas--- y a criterios de viabilidad dentro del marco
+institucional actual. Asumimos que este material es perfectible y que el
+intento de dialogar a la vez con docentes y estudiantes presenta
+desafíos que solo podrán resolverse con la experiencia y el aporte de
+cada cohorte. Invitamos a quienes utilicen este eBook a considerarlo
+como un punto de partida.
+
+\bookmarksetup{startatroot}
+
+\chapter{Fundamento y propósito}\label{fundamento-y-propuxf3sito}
+
+\section{Contexto}\label{contexto}
+
+La enseñanza de la investigación en las carreras de salud suele
+enfrentar el desafío de articular los contenidos metodológicos con las
+prácticas reales de producción de conocimiento. En la Licenciatura en
+Kinesiología y Fisiatría, esta dificultad se expresa en la distancia
+frecuente entre los contenidos teóricos de metodología de la
+investigación y su aplicación concreta en contextos situados.
+
+Aunque los planes de estudio incluyen espacios destinados a la formación
+metodológica, es habitual observar que una parte de los estudiantes
+tiene dificultades para transferir esos aprendizajes al momento de
+realizar trabajos de investigación propios, especialmente en la
+instancia del trabajo final de grado. Por supuesto, la magnitud y
+características de esta brecha pueden variar según la institución, la
+trayectoria individual y la cultura pedagógica, por lo que no debe
+asumirse como un problema universal ni estático.
+
+Este taller optativo, ``Nuevas Tendencias en la Rehabilitación'', se
+concibe como un espacio de articulación entre saberes previos y la
+experiencia concreta de participación en un proceso investigativo
+grupal, orientado a la revisión sistemática de alcance de la producción
+científica regional más reciente. Esta elección metodológica responde
+tanto a la práctica habitual de los estudiantes ---que suelen optar por
+revisiones bibliográficas--- como a criterios de viabilidad dentro de
+las condiciones institucionales actuales. Es importante señalar que la
+revisión sistemática no es el único camino posible para articular teoría
+y práctica, ni pretende sustituir otras experiencias valiosas de
+investigación (como estudios de caso, proyectos comunitarios,
+investigación cualitativa, etc.), pero constituye en este contexto una
+alternativa pertinente y factible.
+
+La propuesta busca mejorar competencias metodológicas y analíticas,
+estimular el trabajo colaborativo y fomentar la reflexión crítica sobre
+las tendencias en la disciplina, así como la producción de aportes
+relevantes para el campo profesional y académico. Sin embargo,
+reconocemos que el logro de estos objetivos depende de múltiples
+factores: el interés y la motivación de los estudiantes, el
+acompañamiento docente y las condiciones institucionales. Por eso, este
+taller se concibe como una experiencia en construcción, abierta a la
+mejora continua y a la incorporación del \emph{feedback} de cada
+cohorte.
+
+\begin{quote}
+\textbf{Nota para los participantes}
+
+Invitamos tanto a estudiantes como a docentes a considerar este taller
+como un punto de partida perfectible, donde la experiencia y la
+reflexión compartida pueden enriquecer la propuesta año a año. Sus
+aportes y sugerencias serán fundamentales para fortalecer el puente
+entre la formación metodológica y la práctica real de la investigación
+en salud.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Objetivos y justificación}\label{objetivos-y-justificaciuxf3n}
+
+\textbf{Objetivo general:}\\
+Promover la alfabetización científica, el desarrollo de competencias
+metodológicas y el análisis critico de la bibliografía en los
+estudiantes, a través de una experiencia guiada y colaborativa de
+revisión sistemática de alcance, orientada a mapear la producción
+científica reciente en fisioterapia y kinesiología en América Latina y
+Brasil.
+
+\textbf{Objetivos específicos:}\\
+- Articular saberes metodológicos previos con una práctica investigativa
+concreta. - Potenciar el trabajo colaborativo, la autonomía crítica y la
+producción académica significativa. - Estimular la reflexión sobre
+tendencias, vacíos y desafíos actuales en la disciplina. - Generar un
+aporte colectivo y transferible a futuras cohortes mediante la
+construcción de un registro colaborativo.
+
+\textbf{Justificación:}\\
+El taller responde a una necesidad concreta observada en la formación:
+la dificultad para trasladar los conocimientos teóricos en investigación
+a prácticas reales y contextualizadas. Al proponer una revisión
+sistemática de alcance centrada en la producción regional, se busca no
+solo fortalecer competencias técnicas, sino también fomentar el
+pensamiento crítico, la colaboración y la participación activa en la
+comunidad académica y profesional.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Organización didáctica}\label{organizaciuxf3n-diduxe1ctica}
+
+El taller se organiza en torno a las siguientes instancias principales:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Introducción y contextualización:} presentación del taller,
+  repaso de saberes previos y encuadre de la revisión sistemática de
+  alcance.
+\item
+  \textbf{Formación de equipos y definición de roles:} distribución de
+  tareas, acuerdo sobre criterios y organización del trabajo
+  colaborativo.
+\item
+  \textbf{Búsqueda y selección de estudios:} aplicación de estrategias
+  de búsqueda, lectura crítica y aplicación de criterios de
+  inclusión/exclusión.
+\item
+  \textbf{Extracción y registro de datos:} uso del modelo de extracción
+  consensuado, organización de la base de datos y primeras
+  aproximaciones al análisis.
+\item
+  \textbf{Análisis y síntesis:} discusión grupal de hallazgos,
+  elaboración de gráficos y tablas descriptivas, identificación de
+  vacíos temáticos.
+\item
+  \textbf{Producción del informe:} redacción del documento final de
+  revisión y aporte al registro colaborativo wiki, destinado a futuras
+  cohortes.
+\end{itemize}
+
+El cronograma y la distribución temporal de actividades se adaptarán a
+la dinámica y necesidades del grupo, priorizando el avance sostenido y
+el trabajo reflexivo.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Cronograma de actividades tentativo (14
+clases)}\label{cronograma-de-actividades-tentativo-14-clases}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.0574}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.5656}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3770}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Clase
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tema / Actividad principal
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Objetivos específicos
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & Presentación del taller, encuadre y objetivos & Conocer la
+propuesta, formar equipos \\
+2 & Repaso de saberes previos, introducción a revisiones de alcance &
+Unificar criterios, aclarar dudas \\
+3 & Estrategias de búsqueda bibliográfica & Elaborar estrategias y
+términos de búsqueda \\
+4 & Aplicación de criterios de inclusión y exclusión & Primer filtrado
+de artículos \\
+5 & Lectura crítica de artículos seleccionados & Discusión y acuerdos
+sobre calidad \\
+6 & Introducción al modelo de extracción de datos & Definir variables y
+consensuar el uso \\
+7 & Extracción de datos (1° parte) & Iniciar carga de datos
+colaborativa \\
+8 & Extracción de datos (2° parte) & Continuar y depurar base de
+datos \\
+9 & Organización y análisis preliminar de resultados & Comenzar a
+identificar tendencias \\
+10 & Elaboración de tablas y gráficos descriptivos & Visualizar
+información, detectar vacíos \\
+11 & Discusión grupal de hallazgos y vacíos temáticos & Compartir
+aprendizajes, nuevas preguntas \\
+12 & Redacción de informe preliminar y aportes al wiki & Sistematizar el
+trabajo, compartir consejos \\
+13 & Revisión final del informe y del registro wiki & Ajustar y mejorar
+los productos finales \\
+14 & Socialización de resultados y cierre del taller & Reflexión
+colectiva, evaluación y despedida \\
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Evaluación}\label{evaluaciuxf3n}
+
+La evaluación contempla tanto la participación activa y sostenida de
+cada estudiante como la calidad del trabajo colaborativo y de los
+productos generados. Los principales criterios de evaluación son:
+
+\begin{itemize}
+\tightlist
+\item
+  Asistencia y participación en las distintas etapas del taller.
+\item
+  Aportes individuales y grupales a la revisión y al documento
+  colaborativo.
+\item
+  Calidad metodológica y presentación del informe final.
+\item
+  Contribuciones al registro wiki como legado para futuras cohortes.
+\end{itemize}
+
+Se valorará especialmente la disposición al trabajo en equipo, la
+capacidad de argumentar decisiones metodológicas y la actitud reflexiva
+y propositiva ante los desafíos del proceso.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\bookmarksetup{startatroot}
+
+\chapter{El proyecto de investigación y el modelo de extracción de
+datos}\label{el-proyecto-de-investigaciuxf3n-y-el-modelo-de-extracciuxf3n-de-datos}
+
+Este capítulo presenta el marco general del proyecto de investigación
+que estructura el taller, junto con las herramientas metodológicas y el
+modelo de extracción que guiarán todo el proceso.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Planteo general del
+proyecto}\label{planteo-general-del-proyecto}
+
+\subsection{Pregunta central}\label{pregunta-central}
+
+\begin{quote}
+¿Qué se ha investigado en fisioterapia y kinesiología en América Latina
+y Brasil entre 2023 y 2027?
+\end{quote}
+
+\subsection{Objetivos}\label{objetivos}
+
+\textbf{General:}\\
+Mapear sistemáticamente la evidencia reciente sobre fisioterapia y
+kinesiología en América Latina y Brasil, identificando: - áreas clínicas
+abordadas, - tipos de estudios publicados, - poblaciones analizadas, - y
+vacíos temáticos o tópicos poco representados.
+
+\textbf{Específicos:}\\
+- Identificar las áreas clínicas predominantes en la producción
+regional. - Analizar los tipos de diseño y metodologías más frecuentes.
+- Describir las poblaciones estudiadas. - Detectar temas emergentes o
+escasamente abordados.
+
+\subsection{Diseño}\label{diseuxf1o}
+
+\begin{itemize}
+\tightlist
+\item
+  Revisión sistemática de alcance (\emph{scoping review}).
+\item
+  Basada en las directrices del Joanna Briggs Institute (JBI).
+\item
+  Reportada según la guía PRISMA-ScR (2020).
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Criterios del proyecto}\label{criterios-del-proyecto}
+
+\subsection{Criterios de inclusión}\label{criterios-de-inclusiuxf3n}
+
+\begin{itemize}
+\tightlist
+\item
+  Años: 2023--2027
+\item
+  Idiomas: español, portugués, inglés
+\item
+  Autores con afiliación institucional en América Latina o Brasil
+\item
+  Estudios con rigurosidad metodológica básica (descripta en el trabajo)
+\item
+  Artículos originales, estudios cualitativos, revisiones sistemáticas,
+  estudios de caso
+\end{itemize}
+
+\subsection{Criterios de exclusión}\label{criterios-de-exclusiuxf3n}
+
+\begin{itemize}
+\tightlist
+\item
+  Editoriales, comentarios, cartas al editor
+\item
+  Trabajos con deficiencias metodológicas graves o ausencia de
+  justificación del diseño
+\item
+  Trabajos a los que no pueda accederse a su texto en forma completa
+\item
+  Trabajos duplicados
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Fuentes y estrategias de
+búsqueda}\label{fuentes-y-estrategias-de-buxfasqueda}
+
+Se utilizarán fuentes y bases de datos reconocidas en el área de la
+salud, priorizando la literatura científica regional:
+
+\begin{itemize}
+\tightlist
+\item
+  PubMed
+\item
+  SciELO
+\item
+  LILACS (vía BVS)
+\item
+  PEDro
+\item
+  Scopus
+\item
+  Google Scholar / Semantic Scholar (literatura gris)
+\end{itemize}
+
+\textbf{Ejemplo de estrategia de búsqueda en PubMed:}\\
+((``Physical Therapy''{[}Title/Abstract{]} OR ``Physiotherapy'' OR
+``Fisioterapia'' OR ``Kinesiology'') AND (``Latin
+America''{[}Affiliation{]} OR ``Brazil''{[}Affiliation{]} OR
+``Argentina'' OR ``Chile'' OR ``Mexico'' OR ``Colombia'' OR ``Peru'')
+AND (``2023/01/01''{[}Date - Publication{]} : ``2026/12/31''{[}Date -
+Publication{]}))
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Selección y extracción de
+datos}\label{selecciuxf3n-y-extracciuxf3n-de-datos}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Selección de estudios:}\\
+  Dos revisores independientes (estudiantes) seleccionarán los artículos
+  relevantes, con apoyo docente en caso de discrepancias.
+\item
+  \textbf{Extracción de datos:}\\
+  Se realizará en base al modelo consensuado (ver siguiente apartado).
+  Si surgen dudas sobre la categorización de alguna variable, se
+  resolverán en grupo.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Modelo de extracción de
+datos}\label{modelo-de-extracciuxf3n-de-datos}
+
+La tabla siguiente define las variables mínimas a registrar en cada
+artículo:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2411}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4464}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3125}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Variable
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Descripción
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Formato sugerido
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+ID & Código interno asignado al artículo & Texto (ej. A001) \\
+Título & Título completo del artículo & Texto \\
+Autores & Apellidos e iniciales de los autores principales & Texto \\
+Año & Año de publicación & Numérico (ej. 2023) \\
+País & País de afiliación del primer autor & Texto \\
+Revista & Nombre de la revista & Texto \\
+Tipo de estudio & Diseño metodológico principal & Texto (ej.
+experimental, revisión) \\
+Área temática & Campo o subdisciplina principal & Texto / Lista
+predefinida \\
+Población & Grupo estudiado (ej. adultos mayores, niños) & Texto \\
+Objetivo principal & Objetivo central del estudio & Texto breve \\
+Etiquetas (keywords) & Palabras clave, etiquetas asignadas & Texto /
+Lista separada por comas \\
+Fuente & Base de datos o repositorio donde se halló & Texto \\
+\end{longtable}
+
+Se registrar los datos en una planilla colaborativa (Excel, Google
+Sheets, etc.), que permita el control cruzado y la revisión grupal.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Reflexión pedagógica sobre las variables y el
+proceso}\label{reflexiuxf3n-pedaguxf3gica-sobre-las-variables-y-el-proceso}
+
+La selección de variables responde a la lógica de la pregunta central y
+los objetivos del proyecto: permite mapear el campo, identificar
+tendencias y comparar estudios entre sí. Es fundamental entender que
+toda decisión sobre qué registrar implica priorizar ciertas dimensiones
+y dejar otras de lado: por eso, el modelo es perfectible y abierto a
+ajustes según lo que surja en la experiencia concreta.
+
+Algunas variables serán fácilmente identificables, otras pueden requerir
+consensos grupales (por ejemplo, área temática o tipo de estudio) o
+interpretación cuidadosa. El docente acompaña el proceso, pero los
+equipos son responsables de justificar sus decisiones de extracción ante
+dudas o ambigüedades.
+
+\begin{quote}
+\textbf{Nota:}\\
+Si algún grupo identifica la necesidad de agregar o modificar variables
+para mejorar la calidad del análisis, puede proponerlo y justificarlo en
+conjunto. Así, el instrumento de extracción se convierte en un recurso
+vivo, ajustado a la realidad del campo.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Síntesis y pasos
+siguientes}\label{suxedntesis-y-pasos-siguientes}
+
+El modelo de extracción y los criterios aquí definidos serán la base
+sobre la que se organizará todo el trabajo del taller. El desafío
+consiste no solo en aplicar la herramienta, sino en reflexionar
+críticamente sobre sus alcances y limitaciones, proponiendo mejoras y
+adaptaciones cuando sea necesario.
+
+En el siguiente capítulo, se desarrollará una guía práctica paso a paso
+para orientar a los equipos estudiantiles en cada etapa del proceso.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\bookmarksetup{startatroot}
+
+\chapter{Guía práctica para
+estudiantes}\label{guuxeda-pruxe1ctica-para-estudiantes}
+
+Esta guía acompaña a cada equipo de estudiantes y al docente en todas
+las etapas del taller. El trabajo se realizará de manera conjunta y
+colaborativa: los docentes y los estudiantes participan a la par en la
+toma de decisiones, la búsqueda, el análisis y la reflexión. Además, el
+uso del \textbf{wiki} es clave desde el inicio: servirá para registrar
+dudas, acuerdos, recomendaciones y aprendizajes, ayudando a construir un
+legado útil para las futuras cohortes.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{¿Qué vamos a hacer?}\label{quuxe9-vamos-a-hacer}
+
+El objetivo es conocer qué se ha investigado en fisioterapia y
+kinesiología en América Latina y Brasil en los últimos años. Para
+lograrlo, trabajaremos en equipos, acompañados por el docente, y
+recorreremos juntos las etapas principales de una revisión sistemática
+de alcance:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Realizar una búsqueda de aproximación para encontrar palabras clave y
+  términos relevantes.
+\item
+  Buscar artículos científicos relevantes en bases de datos confiables
+  usando la estrategia final.
+\item
+  Seleccionar (filtrar) los estudios que cumplen los criterios
+  definidos.
+\item
+  Leer críticamente los artículos seleccionados.
+\item
+  Extraer y registrar los datos más importantes de cada trabajo.
+\item
+  Analizar en conjunto los resultados y presentar los hallazgos.
+\item
+  Compartir dudas, soluciones y recomendaciones en el wiki colaborativo.
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Pasos del proceso}\label{pasos-del-proceso}
+
+\subsection{Paso 1: Búsqueda de aproximación y exploración de palabras
+clave}\label{paso-1-buxfasqueda-de-aproximaciuxf3n-y-exploraciuxf3n-de-palabras-clave}
+
+\begin{itemize}
+\tightlist
+\item
+  Antes de realizar la búsqueda principal, realicen una \textbf{búsqueda
+  de aproximación} en las bases de datos recomendadas (PubMed, SciELO,
+  LILACS, etc.).
+\item
+  El objetivo es explorar qué términos aparecen en los títulos,
+  resúmenes y palabras clave de los artículos recientes sobre el tema.
+\item
+  Tomen nota de los términos más frecuentes, sinónimos y palabras clave
+  (en español, inglés y portugués si es posible).
+\item
+  Discutan en grupo cuáles parecen más útiles o relevantes para el
+  objetivo del taller.
+\item
+  Registren en el wiki los términos elegidos y la lógica de la búsqueda.
+  Así, otros equipos (y futuras cohortes) podrán mejorar sus búsquedas
+  con la experiencia acumulada.
+\item
+  Una vez identificadas las mejores palabras clave, armen la estrategia
+  de búsqueda final, combinando términos y usando los filtros adecuados
+  (año, país, idioma).
+\end{itemize}
+
+\textbf{Ejemplo:}\\
+Si buscan sobre ``rehabilitación en adultos mayores'', primero prueben
+con términos como ``rehabilitación geriátrica'', ``elderly
+rehabilitation'', ``adultos mayores'', ``aged'', y revisen qué términos
+usan los artículos más relevantes en su resumen y sus palabras clave.
+
+\textbf{Diferencia clave:}\\
+La \textbf{búsqueda de aproximación} es flexible y exploratoria, ayuda a
+definir cómo buscar mejor.\\
+La \textbf{búsqueda sistemática} es la estrategia final, estructurada y
+replicable, que aplican luego para encontrar todos los artículos
+relevantes siguiendo los criterios acordados.
+
+\subsection{Paso 2: Búsqueda sistemática y
+registro}\label{paso-2-buxfasqueda-sistemuxe1tica-y-registro}
+
+\begin{itemize}
+\tightlist
+\item
+  Utilicen las palabras clave y la estrategia final definida en la
+  búsqueda de aproximación.
+\item
+  Busquen artículos en las bases recomendadas.
+\item
+  Realicen búsquedas en equipos y comparen los resultados.
+\item
+  Registren cualquier dificultad o hallazgo interesante en el wiki.
+\end{itemize}
+
+\subsection{Paso 3: Selección y
+filtrado}\label{paso-3-selecciuxf3n-y-filtrado}
+
+\begin{itemize}
+\tightlist
+\item
+  Lean títulos y resúmenes para decidir si el artículo cumple con los
+  criterios de inclusión/exclusión.
+\item
+  Si hay dudas, discútanlas en grupo antes de decidir.
+\item
+  Registren los motivos de exclusión (si es posible) y cualquier
+  dificultad en el wiki.
+\end{itemize}
+
+\subsection{Paso 4: Lectura crítica}\label{paso-4-lectura-cruxedtica}
+
+\begin{itemize}
+\tightlist
+\item
+  Lean el artículo completo, prestando atención a la metodología y al
+  objetivo principal.
+\item
+  Identifiquen la población estudiada, el área temática y el tipo de
+  estudio.
+\item
+  Anoten dudas o ambigüedades para discutirlas en equipo y documentarlas
+  en el wiki.
+\end{itemize}
+
+\subsection{Paso 5: Extracción y registro de
+datos}\label{paso-5-extracciuxf3n-y-registro-de-datos}
+
+\begin{itemize}
+\tightlist
+\item
+  Utilicen la tabla de extracción consensuada (ver Capítulo 2).
+\item
+  Completen cada campo con la información más precisa posible.
+\item
+  Si falta información, anótenlo como ``no reportado''.
+\item
+  Registren dificultades o acuerdos metodológicos en el wiki.
+\end{itemize}
+
+\subsection{Paso 6: Análisis y
+presentación}\label{paso-6-anuxe1lisis-y-presentaciuxf3n}
+
+\begin{itemize}
+\tightlist
+\item
+  En grupo, revisen los datos extraídos y busquen patrones, tendencias y
+  vacíos.
+\item
+  Elaboren gráficos o tablas simples para visualizar los resultados.
+\item
+  Preparen una síntesis para compartir en la clase final y en el wiki.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Consejos prácticos y errores
+frecuentes}\label{consejos-pruxe1cticos-y-errores-frecuentes}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{No copies y pegues sin entender.} Resume con tus propias
+  palabras siempre que puedas.
+\item
+  \textbf{No dejes para último momento la lectura de los artículos.}
+  Distribuye el trabajo en tu equipo.
+\item
+  \textbf{Revisa que todos los campos de la tabla estén completos.} Las
+  omisiones dificultan el análisis grupal.
+\item
+  \textbf{Consulta ante cualquier duda.} Es preferible preguntar a
+  avanzar con errores.
+\item
+  \textbf{Registra desacuerdos o dificultades en el wiki.} Esto ayuda a
+  las próximas cohortes y al equipo docente.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Trabajo en equipo, comunicación y uso del
+wiki}\label{trabajo-en-equipo-comunicaciuxf3n-y-uso-del-wiki}
+
+\begin{itemize}
+\tightlist
+\item
+  Define objetivos claros dentro del grupo (buscar, leer, completar la
+  tabla, realizar registros en el wiki, etc.).
+\item
+  Coordinen encuentros regulares (presenciales o virtuales) para revisar
+  el avance y compartir hallazgos.
+\item
+  Resuelvan los desacuerdos dialogando y, si es necesario, con apoyo
+  docente.
+\item
+  Utilicen el wiki como espacio de registro vivo: escriban dudas,
+  acuerdos, consejos y aprendizajes para dejar un legado a los futuros
+  estudiantes.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{¿Qué hacer si surgen
+problemas?}\label{quuxe9-hacer-si-surgen-problemas}
+
+\begin{itemize}
+\tightlist
+\item
+  Si no encuentran suficientes artículos, revisen los términos de
+  búsqueda o consulten otras bases.
+\item
+  Si hay dificultades para decidir la inclusión o exclusión de un
+  artículo, busquen el consenso grupal y, si persiste la duda, consulten
+  al docente.
+\item
+  Si un miembro del grupo no participa, comuníquenlo a tiempo para
+  evitar sobrecargas.
+\item
+  Cualquier situación particular puede y debe quedar registrada en el
+  wiki.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Glosario mínimo}\label{glosario-muxednimo}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Búsqueda de aproximación (exploratoria):}\\
+  Primer rastreo flexible de artículos para identificar palabras clave,
+  términos y estrategias de búsqueda. Sirve para diseñar la búsqueda
+  sistemática.
+\item
+  \textbf{Búsqueda sistemática:}\\
+  Estrategia final, precisa y replicable, con criterios claros y filtros
+  definidos, para encontrar todos los artículos relevantes sobre el
+  tema.
+\item
+  \textbf{Revisión sistemática de alcance:}\\
+  Mapea qué y cómo se ha investigado en un campo temático, sin evaluar
+  necesariamente la calidad de cada estudio.
+\item
+  \textbf{Criterios de inclusión/exclusión:}\\
+  Condiciones para decidir qué artículos analizar y cuáles descartar.
+\item
+  \textbf{Extracción de datos:}\\
+  Proceso de registrar información clave de cada estudio en una planilla
+  común.
+\item
+  \textbf{Wiki:}\\
+  Espacio colaborativo para compartir dudas, aprendizajes, acuerdos y
+  recomendaciones.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{¿Cómo se evaluará tu
+participación?}\label{cuxf3mo-se-evaluaruxe1-tu-participaciuxf3n}
+
+La evaluación será integral y tendrá en cuenta tanto tu participación
+durante el proceso como la calidad de los productos colaborativos. Estos
+son los principales criterios:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Participación activa y sostenida:} Se espera que participes en
+  las discusiones, en la toma de decisiones y en las tareas del grupo,
+  tanto en clases como fuera de ellas.
+\item
+  \textbf{Aportes al trabajo de revisión:} Se valorarán tanto la
+  cantidad como la calidad de tus contribuciones a la búsqueda,
+  selección, análisis y registro de datos.
+\item
+  \textbf{Aportes al wiki colaborativo:} El registro de dudas,
+  soluciones, recomendaciones y reflexiones en el wiki es fundamental.
+  Tu experiencia puede ayudar a futuras cohortes.
+\item
+  \textbf{Presentismo:} La asistencia a las clases y actividades es
+  importante para el funcionamiento del equipo.
+\item
+  \textbf{Informe final:} La calidad del informe de avance y la
+  presentación de los resultados serán evaluadas por su claridad, orden
+  y profundidad.
+\end{itemize}
+
+\textbf{Recuerda:}\\
+El proceso es tan importante como el resultado final. El aprendizaje
+colectivo, la colaboración y la honestidad intelectual se valoran tanto
+como el producto escrito. No dudes en consultar, proponer mejoras o
+registrar tus experiencias en el wiki.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\bookmarksetup{startatroot}
+
+\chapter{Wiki del proceso colaborativo y legado
+estudiantil}\label{wiki-del-proceso-colaborativo-y-legado-estudiantil}
+
+El wiki es una herramienta central en este taller. No es solo un espacio
+para ``dudas y preguntas frecuentes'', sino un \textbf{manual vivo}
+donde cada cohorte de estudiantes deja registro de su experiencia,
+errores, soluciones y recomendaciones para quienes vengan después.
+Construir el wiki es, al mismo tiempo, aprender haciendo y dejar una
+huella para la comunidad.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{¿Para qué sirve el wiki?}\label{para-quuxe9-sirve-el-wiki}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Compartir dudas y problemas:} Anotar cualquier obstáculo,
+  confusión o dificultad encontrada durante el proceso.
+\item
+  \textbf{Registrar soluciones y acuerdos:} Escribir cómo resolvieron
+  esas dificultades, qué consensos alcanzó el grupo o qué estrategias
+  funcionaron.
+\item
+  \textbf{Recomendar buenas prácticas:} Dejar consejos y atajos útiles
+  para buscar, seleccionar, leer o registrar artículos.
+\item
+  \textbf{Crear un legado:} Cada entrada suma a una base de conocimiento
+  que será útil a los próximos equipos y a los propios docentes.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{¿Qué tipo de entradas puedo (y debo)
+sumar?}\label{quuxe9-tipo-de-entradas-puedo-y-debo-sumar}
+
+Algunas ideas para el tipo de información a dejar en el wiki:
+
+\begin{itemize}
+\tightlist
+\item
+  Errores frecuentes y cómo los resolvieron (por ejemplo: ``Nos
+  confundimos al identificar la población y esto hicimos para
+  solucionarlo\ldots{}'')
+\item
+  Dudas metodológicas y las respuestas encontradas (consultando
+  docentes, leyendo o debatiendo)
+\item
+  Consejos para buscar artículos o elegir palabras clave
+\item
+  Recomendaciones sobre organización grupal
+\item
+  Sugerencias para el uso de la planilla de extracción o el manejo de
+  referencias
+\item
+  Frases o reflexiones breves para futuras cohortes (``No subestimen la
+  importancia de definir bien los criterios de inclusión\ldots{}'')
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{¿Cómo se usa el wiki en Moodle? (Guía paso a
+paso)}\label{cuxf3mo-se-usa-el-wiki-en-moodle-guuxeda-paso-a-paso}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Accede al aula virtual del taller y busca la sección Wiki}
+  (puede llamarse ``Wiki colaborativa'', ``Registro de proceso'', etc.).
+\item
+  \textbf{Haz clic en ``Añadir entrada'' o ``Editar''} (según esté
+  configurado).
+\item
+  \textbf{Escribe un título claro y breve} (por ejemplo: ``Cómo elegimos
+  palabras clave'', ``Error frecuente: exclusión de artículos'').
+\item
+  \textbf{Redacta tu entrada de forma concisa y concreta}. Si es una
+  duda, sé específico. Si es una recomendación, usa ejemplos o justifica
+  el consejo.
+\item
+  \textbf{(Opcional) Adjunta una imagen o captura de pantalla} si es
+  útil para ilustrar el problema o la solución.
+\item
+  \textbf{Guarda la entrada} y verifica que quede visible para el resto
+  del grupo.
+\item
+  \textbf{Lee y comenta las entradas de otros} si tienes algo que sumar,
+  aclarar o mejorar.
+\item
+  \textbf{No borres aportes de otros}: si una entrada ya fue respondida
+  o actualizada, agrega un comentario debajo o crea una nueva versión.
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{4.3.1. ¿Cómo crear nuevas páginas, secciones y un índice en
+el wiki de
+Moodle?}\label{cuxf3mo-crear-nuevas-puxe1ginas-secciones-y-un-uxedndice-en-el-wiki-de-moodle}
+
+\begin{itemize}
+\tightlist
+\item
+  Para mantener la información organizada y accesible, puedes crear
+  nuevas páginas dentro del wiki para cada tema, duda frecuente, error o
+  recomendación.
+\item
+  \textbf{¿Cómo hacerlo?}
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    Cuando estés editando o creando una entrada, escribe el título de la
+    página que quieras crear entre dobles corchetes, por ejemplo:
+    \texttt{{[}{[}Errores\ frecuentes{]}{]}} o
+    \texttt{{[}{[}Palabras\ clave\ útiles{]}{]}}.\\
+  \item
+    Al guardar tu entrada, Moodle convertirá ese texto en un enlace a
+    una nueva página, que podrás completar después.
+  \item
+    Haz clic en el enlace recién creado para editar esa nueva página y
+    sumar contenido relacionado.
+  \item
+    Puedes anidar páginas, por ejemplo:
+    \texttt{{[}{[}Errores\ frecuentes/Extracción\ de\ datos{]}{]}} para
+    crear una subpágina.
+  \end{enumerate}
+\item
+  \textbf{Sugerencia:}\\
+  Crea una página principal (por ejemplo: ``Inicio del Wiki'' o ``Manual
+  del taller'') con un índice de secciones y enlaces a cada página
+  creada por el grupo. Así, el wiki será más fácil de navegar para
+  todos.
+\end{itemize}
+
+\subsubsection{Ejemplo de índice wiki (Manual del
+taller):}\label{ejemplo-de-uxedndice-wiki-manual-del-taller}
+
+Puedes copiar y pegar esto en la \textbf{página principal} del wiki, y
+los títulos entre corchetes crearán automáticamente los enlaces:
+
+= Manual del taller: índice = {[}{[}Dudas metodológicas{]}{]}
+{[}{[}Recomendaciones para buscar artículos{]}{]} {[}{[}Buenas prácticas
+para el registro de datos{]}{]} {[}{[}Errores frecuentes{]}{]} {[}{[}FAQ
+del taller{]}{]}
+
+\begin{quote}
+\textbf{Tip:} Si tienes dudas sobre cómo usar las funciones del wiki en
+Moodle, pide una demostración al docente o revisa los
+\href{https://docs.moodle.org/all/es/Uso_de_Wiki}{tutoriales cortos} de
+la plataforma.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{¿Cómo se ve una entrada de
+wiki?}\label{cuxf3mo-se-ve-una-entrada-de-wiki}
+
+\textbf{Esqueleto recomendado:}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Título:} Describe el tema en pocas palabras.
+\item
+  \textbf{Problema o duda:}\\
+  Explica brevemente el problema encontrado, la situación concreta o la
+  pregunta que surgió.
+\item
+  \textbf{Solución, respuesta o recomendación:}\\
+  Describe cómo lo resolviste (o cómo te lo explicaron). Si es una
+  recomendación, justifica brevemente por qué puede ayudar a otros.
+\item
+  \textbf{(Opcional) Ejemplo real o breve captura:}\\
+  Si corresponde, agrega una imagen o una cita breve.
+\item
+  \textbf{Reflexión final (opcional):}\\
+  ¿Qué aprendiste de la experiencia? ¿Qué sugerirías a los futuros
+  equipos sobre este tema?
+\end{itemize}
+
+\textbf{Ejemplo completo de entrada útil:}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Título:} Dificultad para encontrar palabras clave en LILACS
+\item
+  \textbf{Problema:}\\
+  No encontrábamos artículos relevantes usando solo ``fisioterapia'' y
+  ``rehabilitación''. Los resultados eran muy generales.
+\item
+  \textbf{Solución:}\\
+  Exploramos los artículos que sí eran relevantes y encontramos que
+  muchos usaban el término ``movimiento funcional'' y ``rehabilitación
+  motora''. Agregamos estos términos y filtramos por país.
+\item
+  \textbf{Reflexión:}\\
+  Sugerimos siempre hacer una búsqueda de aproximación antes de definir
+  la estrategia final y anotar los términos más productivos en el wiki.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Dudas más frecuentes (FAQ)}\label{dudas-muxe1s-frecuentes-faq}
+
+\begin{itemize}
+\item
+  \textbf{¿Qué hago si dos artículos parecen casi iguales?}\\
+  Verifica si son el mismo estudio publicado en dos revistas o si hay
+  diferencias reales (diseño, población, etc.). Consulta al docente ante
+  la duda y registra el caso en el wiki.
+\item
+  \textbf{¿Cómo decidir si un artículo cumple los criterios de inclusión
+  si no hay suficiente información en el resumen?}\\
+  Intenta acceder al texto completo. Si sigue sin quedar claro,
+  discútelo en grupo y consúltalo con el docente.
+\item
+  \textbf{¿Es obligatorio que todos los miembros del grupo participen en
+  el wiki?}\\
+  Sí, la participación es colectiva y todos los aportes son valiosos.
+\item
+  \textbf{¿Qué pasa si me equivoco al registrar algo en el wiki?}\\
+  Puedes corregirlo en una nueva entrada o comentario, pero nunca borres
+  lo que ya está (así queda registro de todo el proceso).
+\item
+  \textbf{¿Qué tipo de recomendaciones son útiles para futuras
+  cohortes?}\\
+  Todo lo que te hubiera gustado saber al empezar: atajos, errores
+  evitables, dudas resueltas, estrategias de organización.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Por qué dejar un legado:}\label{por-quuxe9-dejar-un-legado}
+
+\begin{itemize}
+\tightlist
+\item
+  Tu experiencia puede ayudar a futuros estudiantes a evitar los mismos
+  errores o resolver dudas más rápido.
+\item
+  El wiki también es útil para docentes: les muestra las verdaderas
+  dificultades, aciertos y necesidades de cada grupo.
+\item
+  Un taller con un wiki robusto es más ágil y enriquecedor para todos.
+\end{itemize}
+
+\textbf{Recuerda:}\\
+Cada entrada, por mínima que sea, puede hacer la diferencia para otros.
+Lo que hoy es tu duda, mañana puede ser la respuesta clave de un equipo
+nuevo.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\bookmarksetup{startatroot}
+
+\chapter{Cierre: hacia una comunidad de aprendizaje e
+investigación}\label{cierre-hacia-una-comunidad-de-aprendizaje-e-investigaciuxf3n}
+
+Este documento es solo un punto de partida. Tanto el taller como los
+materiales aquí presentados fueron pensados para evolucionar junto con
+las necesidades, intereses y desafíos de quienes lo utilicen. Su valor
+radica en la apropiación colectiva, la actualización constante y la
+disposición a repensar los métodos, las preguntas y los enfoques.
+
+La construcción del conocimiento en salud exige apertura, rigor y
+colaboración. Esperamos que la experiencia de revisar, analizar y
+producir colectivamente marque una diferencia real en la formación, y
+también inspire a quienes sigan este camino a buscar nuevas preguntas y
+soluciones.
+
+\section{Posibles líneas futuras}\label{posibles-luxedneas-futuras}
+
+\begin{itemize}
+\tightlist
+\item
+  Ampliar a áreas temáticas emergentes.
+\item
+  Sumar herramientas de análisis cualitativo y visualización avanzada de
+  datos.
+\item
+  Integrar este modelo de taller con actividades de extensión o
+  proyectos interdisciplinarios.
+\item
+  Desarrollar espacios de discusión sobre ética y calidad en la
+  investigación.
+\item
+  Publicar resultados en repositorios abiertos o como preprints.
+\end{itemize}
+
+El aprendizaje nunca termina: cada cohorte puede dejar nuevas preguntas,
+herramientas y recomendaciones, mejorando la experiencia para quienes
+vengan después. El documento y el wiki son herramientas vivas: dependen
+del compromiso y la creatividad de cada estudiante y docente.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+
+\backmatter
+
+
+\end{document}

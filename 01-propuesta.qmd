@@ -1,0 +1,82 @@
+# Fundamento y propósito
+
+## Contexto
+
+La enseñanza de la investigación en las carreras de salud suele enfrentar el desafío de articular los contenidos metodológicos con las prácticas reales de producción de conocimiento. En la Licenciatura en Kinesiología y Fisiatría, esta dificultad se expresa en la distancia frecuente entre los contenidos teóricos de metodología de la investigación y su aplicación concreta en contextos situados.
+
+Aunque los planes de estudio incluyen espacios destinados a la formación metodológica, es habitual observar que una parte de los estudiantes tiene dificultades para transferir esos aprendizajes al momento de realizar trabajos de investigación propios, especialmente en la instancia del trabajo final de grado. Por supuesto, la magnitud y características de esta brecha pueden variar según la institución, la trayectoria individual y la cultura pedagógica, por lo que no debe asumirse como un problema universal ni estático.
+
+Este taller optativo, "Nuevas Tendencias en la Rehabilitación", se concibe como un espacio de articulación entre saberes previos y la experiencia concreta de participación en un proceso investigativo grupal, orientado a la revisión sistemática de alcance de la producción científica regional más reciente. Esta elección metodológica responde tanto a la práctica habitual de los estudiantes —que suelen optar por revisiones bibliográficas— como a criterios de viabilidad dentro de las condiciones institucionales actuales. Es importante señalar que la revisión sistemática no es el único camino posible para articular teoría y práctica, ni pretende sustituir otras experiencias valiosas de investigación (como estudios de caso, proyectos comunitarios, investigación cualitativa, etc.), pero constituye en este contexto una alternativa pertinente y factible.
+
+La propuesta busca mejorar competencias metodológicas y analíticas, estimular el trabajo colaborativo y fomentar la reflexión crítica sobre las tendencias en la disciplina, así como la producción de aportes relevantes para el campo profesional y académico. Sin embargo, reconocemos que el logro de estos objetivos depende de múltiples factores: el interés y la motivación de los estudiantes, el acompañamiento docente y las condiciones institucionales. Por eso, este taller se concibe como una experiencia en construcción, abierta a la mejora continua y a la incorporación del *feedback* de cada cohorte.
+
+> **Nota para los participantes**
+>
+> Invitamos tanto a estudiantes como a docentes a considerar este taller como un punto de partida perfectible, donde la experiencia y la reflexión compartida pueden enriquecer la propuesta año a año. Sus aportes y sugerencias serán fundamentales para fortalecer el puente entre la formación metodológica y la práctica real de la investigación en salud.
+
+---
+
+## Objetivos y justificación
+
+**Objetivo general:**  
+Promover la alfabetización científica, el desarrollo de competencias metodológicas y el análisis critico de la bibliografía en los estudiantes, a través de una experiencia guiada y colaborativa de revisión sistemática de alcance, orientada a mapear la producción científica reciente en fisioterapia y kinesiología en América Latina y Brasil.
+
+**Objetivos específicos:**  
+- Articular saberes metodológicos previos con una práctica investigativa concreta.
+- Potenciar el trabajo colaborativo, la autonomía crítica y la producción académica significativa.
+- Estimular la reflexión sobre tendencias, vacíos y desafíos actuales en la disciplina.
+- Generar un aporte colectivo y transferible a futuras cohortes mediante la construcción de un registro colaborativo.
+
+**Justificación:**  
+El taller responde a una necesidad concreta observada en la formación: la dificultad para trasladar los conocimientos teóricos en investigación a prácticas reales y contextualizadas. Al proponer una revisión sistemática de alcance centrada en la producción regional, se busca no solo fortalecer competencias técnicas, sino también fomentar el pensamiento crítico, la colaboración y la participación activa en la comunidad académica y profesional.
+
+---
+
+## Organización didáctica
+
+El taller se organiza en torno a las siguientes instancias principales:
+
+- **Introducción y contextualización:** presentación del taller, repaso de saberes previos y encuadre de la revisión sistemática de alcance.
+- **Formación de equipos y definición de roles:** distribución de tareas, acuerdo sobre criterios y organización del trabajo colaborativo.
+- **Búsqueda y selección de estudios:** aplicación de estrategias de búsqueda, lectura crítica y aplicación de criterios de inclusión/exclusión.
+- **Extracción y registro de datos:** uso del modelo de extracción consensuado, organización de la base de datos y primeras aproximaciones al análisis.
+- **Análisis y síntesis:** discusión grupal de hallazgos, elaboración de gráficos y tablas descriptivas, identificación de vacíos temáticos.
+- **Producción del informe:** redacción del documento final de revisión y aporte al registro colaborativo wiki, destinado a futuras cohortes.
+
+El cronograma y la distribución temporal de actividades se adaptarán a la dinámica y necesidades del grupo, priorizando el avance sostenido y el trabajo reflexivo.
+
+---
+
+## Cronograma de actividades tentativo (14 clases)
+
+| Clase | Tema / Actividad principal                                          | Objetivos específicos                        |
+|-------|---------------------------------------------------------------------|----------------------------------------------|
+| 1     | Presentación del taller, encuadre y objetivos                       | Conocer la propuesta, formar equipos         |
+| 2     | Repaso de saberes previos, introducción a revisiones de alcance     | Unificar criterios, aclarar dudas            |
+| 3     | Estrategias de búsqueda bibliográfica                               | Elaborar estrategias y términos de búsqueda  |
+| 4     | Aplicación de criterios de inclusión y exclusión                    | Primer filtrado de artículos                 |
+| 5     | Lectura crítica de artículos seleccionados                          | Discusión y acuerdos sobre calidad           |
+| 6     | Introducción al modelo de extracción de datos                       | Definir variables y consensuar el uso        |
+| 7     | Extracción de datos (1° parte)                                      | Iniciar carga de datos colaborativa          |
+| 8     | Extracción de datos (2° parte)                                      | Continuar y depurar base de datos            |
+| 9     | Organización y análisis preliminar de resultados                    | Comenzar a identificar tendencias            |
+| 10    | Elaboración de tablas y gráficos descriptivos                       | Visualizar información, detectar vacíos      |
+| 11    | Discusión grupal de hallazgos y vacíos temáticos                    | Compartir aprendizajes, nuevas preguntas     |
+| 12    | Redacción de informe preliminar y aportes al wiki                   | Sistematizar el trabajo, compartir consejos  |
+| 13    | Revisión final del informe y del registro wiki                      | Ajustar y mejorar los productos finales      |
+| 14    | Socialización de resultados y cierre del taller                     | Reflexión colectiva, evaluación y despedida  |
+
+---
+
+## Evaluación
+
+La evaluación contempla tanto la participación activa y sostenida de cada estudiante como la calidad del trabajo colaborativo y de los productos generados. Los principales criterios de evaluación son:
+
+- Asistencia y participación en las distintas etapas del taller.
+- Aportes individuales y grupales a la revisión y al documento colaborativo.
+- Calidad metodológica y presentación del informe final.
+- Contribuciones al registro wiki como legado para futuras cohortes.
+
+Se valorará especialmente la disposición al trabajo en equipo, la capacidad de argumentar decisiones metodológicas y la actitud reflexiva y propositiva ante los desafíos del proceso.
+
+---

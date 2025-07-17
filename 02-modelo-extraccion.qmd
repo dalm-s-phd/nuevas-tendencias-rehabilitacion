@@ -1,0 +1,120 @@
+# El proyecto de investigación y el modelo de extracción de datos
+
+Este capítulo presenta el marco general del proyecto de investigación que estructura el taller, junto con las herramientas metodológicas y el modelo de extracción que guiarán todo el proceso.
+
+---
+
+## Planteo general del proyecto
+
+### Pregunta central
+
+> ¿Qué se ha investigado en fisioterapia y kinesiología en América Latina y Brasil entre 2023 y 2027?
+
+### Objetivos
+
+**General:**  
+Mapear sistemáticamente la evidencia reciente sobre fisioterapia y kinesiología en América Latina y Brasil, identificando:
+- áreas clínicas abordadas,
+- tipos de estudios publicados,
+- poblaciones analizadas,
+- y vacíos temáticos o tópicos poco representados.
+
+**Específicos:**  
+- Identificar las áreas clínicas predominantes en la producción regional.
+- Analizar los tipos de diseño y metodologías más frecuentes.
+- Describir las poblaciones estudiadas.
+- Detectar temas emergentes o escasamente abordados.
+
+### Diseño
+
+- Revisión sistemática de alcance (*scoping review*).
+- Basada en las directrices del Joanna Briggs Institute (JBI).
+- Reportada según la guía PRISMA-ScR (2020).
+
+---
+
+## Criterios del proyecto
+
+### Criterios de inclusión
+
+- Años: 2023–2027
+- Idiomas: español, portugués, inglés
+- Autores con afiliación institucional en América Latina o Brasil
+- Estudios con rigurosidad metodológica básica (descripta en el trabajo)
+- Artículos originales, estudios cualitativos, revisiones sistemáticas, estudios de caso
+
+### Criterios de exclusión
+
+- Editoriales, comentarios, cartas al editor
+- Trabajos con deficiencias metodológicas graves o ausencia de justificación del diseño
+- Trabajos a los que no pueda accederse a su texto en forma completa
+- Trabajos duplicados
+
+---
+
+## Fuentes y estrategias de búsqueda
+
+Se utilizarán fuentes y bases de datos reconocidas en el área de la salud, priorizando la literatura científica regional:
+
+- PubMed
+- SciELO
+- LILACS (vía BVS)
+- PEDro
+- Scopus
+- Google Scholar / Semantic Scholar (literatura gris)
+
+**Ejemplo de estrategia de búsqueda en PubMed:**  
+(("Physical Therapy"[Title/Abstract] OR "Physiotherapy" OR "Fisioterapia" OR "Kinesiology") AND ("Latin America"[Affiliation] OR "Brazil"[Affiliation] OR "Argentina" OR "Chile" OR "Mexico" OR "Colombia" OR "Peru") AND ("2023/01/01"[Date - Publication] : "2026/12/31"[Date - Publication]))
+
+---
+
+## Selección y extracción de datos
+
+- **Selección de estudios:**  
+  Dos revisores independientes (estudiantes) seleccionarán los artículos relevantes, con apoyo docente en caso de discrepancias.
+- **Extracción de datos:**  
+  Se realizará en base al modelo consensuado (ver siguiente apartado). Si surgen dudas sobre la categorización de alguna variable, se resolverán en grupo.
+
+---
+
+## Modelo de extracción de datos
+
+La tabla siguiente define las variables mínimas a registrar en cada artículo:
+
+| Variable                  | Descripción                                      | Formato sugerido                  |
+|---------------------------|--------------------------------------------------|-----------------------------------|
+| ID                        | Código interno asignado al artículo              | Texto (ej. A001)                  |
+| Título                    | Título completo del artículo                     | Texto                             |
+| Autores                   | Apellidos e iniciales de los autores principales | Texto                             |
+| Año                       | Año de publicación                               | Numérico (ej. 2023)               |
+| País                      | País de afiliación del primer autor              | Texto                             |
+| Revista                   | Nombre de la revista                             | Texto                             |
+| Tipo de estudio           | Diseño metodológico principal                    | Texto (ej. experimental, revisión)|
+| Área temática             | Campo o subdisciplina principal                  | Texto / Lista predefinida         |
+| Población                 | Grupo estudiado (ej. adultos mayores, niños)     | Texto                             |
+| Objetivo principal        | Objetivo central del estudio                     | Texto breve                       |
+| Etiquetas (keywords)      | Palabras clave, etiquetas asignadas              | Texto / Lista separada por comas  |
+| Fuente                    | Base de datos o repositorio donde se halló       | Texto                             |
+
+Se registrar los datos en una planilla colaborativa (Excel, Google Sheets, etc.), que permita el control cruzado y la revisión grupal.
+
+---
+
+## Reflexión pedagógica sobre las variables y el proceso
+
+La selección de variables responde a la lógica de la pregunta central y los objetivos del proyecto: permite mapear el campo, identificar tendencias y comparar estudios entre sí. Es fundamental entender que toda decisión sobre qué registrar implica priorizar ciertas dimensiones y dejar otras de lado: por eso, el modelo es perfectible y abierto a ajustes según lo que surja en la experiencia concreta.
+
+Algunas variables serán fácilmente identificables, otras pueden requerir consensos grupales (por ejemplo, área temática o tipo de estudio) o interpretación cuidadosa. El docente acompaña el proceso, pero los equipos son responsables de justificar sus decisiones de extracción ante dudas o ambigüedades.
+
+> **Nota:**  
+> Si algún grupo identifica la necesidad de agregar o modificar variables para mejorar la calidad del análisis, puede proponerlo y justificarlo en conjunto. Así, el instrumento de extracción se convierte en un recurso vivo, ajustado a la realidad del campo.
+
+---
+
+## Síntesis y pasos siguientes
+
+El modelo de extracción y los criterios aquí definidos serán la base sobre la que se organizará todo el trabajo del taller. El desafío consiste no solo en aplicar la herramienta, sino en reflexionar críticamente sobre sus alcances y limitaciones, proponiendo mejoras y adaptaciones cuando sea necesario.
+
+En el siguiente capítulo, se desarrollará una guía práctica paso a paso para orientar a los equipos estudiantiles en cada etapa del proceso.
+
+---

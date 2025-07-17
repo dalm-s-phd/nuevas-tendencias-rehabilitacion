@@ -1,0 +1,49 @@
+project:
+  type: book
+
+book:
+  title: "Nuevas Tendencias en la Rehabilitación"
+  author: "Equipo de Cátedra — Licenciatura en Kinesiología y Fisiatría"
+#  institute: "Universidad Nacional Arturo Jauretche"
+  cover-image: portada_arte.png
+  cover-image-alt: "Arte conceptual de rehabilitación, elementos cinéticos y logo UNAJ"
+#  logo: unaj_logo.jpg
+  date: "2025"
+  chapters:
+    - index.qmd
+    - 01-propuesta.qmd
+    - 02-modelo-extraccion.qmd
+    - 03-guia-estudiantes.qmd
+    - 04-wiki.qmd
+    - 05-cierre.qmd
+
+
+format:
+  html:
+    cover-title: true
+    toc: true
+    toc-depth: 3
+    theme:
+      light: cosmo
+    logo: unaj_logo.jpg
+    css: portada.css # Opcional para mejorar estilos
+  pdf:
+    documentclass: book
+    toc: true
+    number-sections: true
+ # Ajuste de márgenes (ejemplo: 2cm en todos los lados)
+    logo: unaj_logo.jpg
+    include-in-header:
+      text: |
+        \usepackage[a4paper,margin=2cm]{geometry}
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhead{}  % Borra todos los headers
+        \renewcommand{\headrulewidth}{0pt}
+        \fancyfoot[C]{\thepage}
+  epub:
+    toc: true
+lang: es
+
+
+
