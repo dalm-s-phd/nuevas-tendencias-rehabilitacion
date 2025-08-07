@@ -9,7 +9,7 @@ Este repositorio contiene el eBook interactivo y navegable _Nuevas Tendencias en
 ## 📖 Versión web del libro
 
 El libro está disponible para lectura online a través de GitHub Pages:  
-👉 [Ver el eBook](https://tuusuario.github.io/turepo/)  
+👉 [Ver el eBook](https://dalm-s-phd.github.io/nuevas-tendencias-rehabilitacion/)
 > _Reemplazá este link por el tuyo real cuando esté disponible._
 
 ## 📂 Estructura del repositorio
